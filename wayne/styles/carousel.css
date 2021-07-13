@@ -1,0 +1,123 @@
+.carousel{
+    height: 500px;
+    width: 900px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.carousel .slide,
+.carousel .slides{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .slides{
+    position: relative;
+}
+
+.carousel .slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f7f5;
+    z-index: 1;
+    opacity: 0;
+}
+
+.carousel .slide.moving{
+    transition: all 0.3s;
+}
+
+.carousel .slide.left,
+.carousel .slide.right,
+.carousel .slide.center{
+    opacity: 1;
+}
+
+.carousel .slide.center{
+    transform: translateX(0);
+}
+
+.carousel .slide.left{
+    transform: translateX(-100%);
+}
+
+.carousel .slide.right{
+    transform: translateX(100%);
+}
+
+.carousel .controls{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+    z-index: 5;
+}
+
+.carousel [class*='control-']{
+    pointer-events: initial;
+}
+
+.carousel .control-left,
+.carousel .control-right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 3rem;
+    font-size: 3em;
+    font-weight: lighter;
+    color: #ffb9e0;
+}
+
+.carousel control-left{
+    left: 1rem;
+}
+
+.carousel .control-right{
+    right: 1rem;
+}
+
+.carousel .control-pagination{
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffb9e0;
+}
+
+.carousel .control-dot{
+    padding: 1rem;
+    font-size: 4em;
+    line-height: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    transform: sclae(1, 1);
+}
+
+.carousel .control-dot.active{
+    
+    color: #f15fd2;
+}
+
+.carousel .control-dot,
+.carousel .control-left,
+.carousel .control-right{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

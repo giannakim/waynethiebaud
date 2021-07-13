@@ -1,0 +1,59 @@
+.zoom{
+    display: inline-block;
+}
+
+.main-image{
+    position: relative;
+}
+
+.main-image img{
+    width: 500px; 
+}
+
+.zoomed-image{
+    width: 500px;
+    height: 412px;
+    background-size: calc(600px * 2);
+    background-position: 0 0;
+}
+
+.zoomer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 170px;
+    border: 1px solid white;
+    pointer-events: none;
+}
+
+
+
+.zoom-cans{
+    display: inline-block;
+}
+
+.main-image-cans{
+    position: relative;
+}
+
+.main-image-cans img{
+    width: 300px; 
+}
+
+.zoomed-image-cans{
+    width: 300px;
+    height: 387px;
+    background-size: calc(300px * 2);
+    background-position: 0 0;
+}
+
+.zoomer-cans{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 195px;
+    border: 1px solid white;
+    pointer-events: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cakes - Wayne Thiebaud - Gallery</title>
+    <link rel="stylesheet" type="text/css"  href="styles/style.css">
+    <link rel="stylesheet" type="text/css"  href="styles/tab.css">
+    <link rel="stylesheet" type="text/css"  href="styles/carousel.css">
+   
+    <style type="text/css"> 
+        a { text-decoration:none } </style> 
+
+    
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html" class="title">Wayne Thiebaud</a>
+        </div>
+        <nav>
+            <div class="complicated">
+                <a href="#" class="category_topic">Artwork</a>
+                <ul>
+                    <li><a href="artwork1.html">Cakes</a></li>
+                    <li class="divider_line"></li>
+                    <li><a href="artwork2.html">Big Suckers</a></li>
+                    <li class="divider_line"></li>
+                    <li><a href="artwork3.html">Paint Cans</a></li>  
+                </ul>
+            </div>
+            <a href="gallery.html">Gallery</a>
+            <a href="artist.html">Artist</a>
+        </nav>
+    </header>
+    <main>
+        <h1>National Gallery of Art</h1>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide center">
+                    <img class="gallery_image" src="img/gallery2.jpg" alt="Image of National Gallery of Art">  
+                </div>
+                <div class="slide">
+                    <img class="gallery_image" src="img/gallery4.jpg" alt="Image of National Gallery of Art"> 
+                </div>
+                <div class="slide">
+                    <img class="gallery_image" src="img/gallery0.jpg" alt="Image of National Gallery of Art"> 
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-left">&lt;</div>
+                <div class="control-right">&gt;</div>
+                <div class="control-pagination">
+                    <div class="control-dot">&bullet;</div>
+                    <div class="control-dot">&bullet;</div>
+                    <div class="control-dot">&bullet;</div>
+                </div>
+            </div>
+        </div>
+        <p id="contents">
+            The National Gallery of Art, and its attached Sculpture Garden, is a national art museum in Washington, D.C., located on the National Mall, between 3rd and 9th Streets, at Constitution Avenue NW. Open to the public and free of charge, the museum was privately established in 1937 for the American people by a joint resolution of the United States Congress. Andrew W. Mellon donated a substantial art collection and funds for construction. The core collection includes major works of art donated by Paul Mellon, Ailsa Mellon Bruce, Lessing J. Rosenwald, Samuel Henry Kress, Rush Harrison Kress, Peter Arrell Browne Widener, Joseph E. Widener, and Chester Dale.<br>
+            It is one of the largest museums in North America. For the breadth, scope, and magnitude of its collections, the National Gallery is widely considered to be one of the greatest museums in the United States of America, often ranking alongside the Metropolitan Museum of Art and Museum of Modern Art in New York City, the Art Institute of Chicago in Chicago, Illinois, and the Museum of Fine Arts, Boston in Boston, Massachusetts.<br>
+            Of the top three art museums in the United States by annual visitors, it is the only one that has no admission fee.
+            It ranks 2nd in American museums behind the Met for number of annual visitors and 10th in the world.
+        </p>
+
+        <div class="tabgroup">
+            <div class="tablist">
+                <div class="tab active">Location</div>
+                <div class="tab">Hours</div>
+            </div>
+
+            <div class="contentlist">
+                <div class="content active">
+                    <p id="location">Constitution Ave. NW, Washington, DC 20565</p>
+                    <img class="mapimage" src="img/map.jpg" alt="Image of Map">
+                </div>
+                <div class="content">
+                    <p id="hours">Everyday 11AM-4PM<br>(202) 737-4215<br>Tickets: Free
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer><p>WNM 601 - Wayne Thiebaud - Gianna Kim</p></footer>
+    
+    <script type="text/javascript" src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script>
+		new Carousel({
+			element: $(".carousel").eq(0),
+			timing: 5000
+		})
+    </script>
+    <script type="text/javascript" src="scripts/tab.js"></script>
+    <script type="text/javascript" src="scripts/menu_accordion.js"></script>
+</body>
+
+</html>
